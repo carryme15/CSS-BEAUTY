@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by carryme15 (http://jsbin.com/zawuqi/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+.container{
+  background-color: lightseagreen;
+  color: white;
+  padding: 1px 1em;
+  box-shadow: 3px 6px 1em rgba(0,0,0,.4);
+}
+.close-btn{
+  float: right;
+  width: 1em;
+  height: 1em;
+  font-size: 1.5em;
+  font-weight: 900;
+  color: inherit;
+  cursor: point;
+}
+.close-btn:hover{
+  color: #333;
+  transition: all 0.15s;
+}
+.pic-card{
+  box-sizing: border-box;
+  width: 20em;
+  box-shadow: 2px 6px 1em rgba(0,0,0,.4);  
+}
+.pic-card figure{
+  box-sizing: border-box;
+  background: white;
+  padding: 0;
+  margin: 1em 0;
+}
+.pic-card img{
+  display: block;
+  border: none;
+  width: 100%;
+}
+.pic-card figcaption{
+  padding: 1px 1em;
+}
+.article-card{
+  box-sizing: border-box;
+  width: 20em;
+  margin: 1em 0;
+  padding: 0;
+  background-color: white;
+  box-shadow: 3px 6px 1em rgba(0,0,0,.4)
+}
+.article-card h3{
+  background-color: lightseagreen;
+  padding: 1em;
+  text-align: center;
+  color: white;
+}
+.article-card p{
+  padding: 0 1em;
+}
+.article-card button{
+  border-radius: 0.2em;
+  border: none;
+  margin-left: 1em;
+  background-color: lightseagreen;
+  box-shadow: 1px 2px 0.1em rgba(0,0,0,.2);
+  text-shadow: 0 0 1px gray;
+  border: 1px solid rgba(0,0,0,.2);
+  color: white;
+  cursor: point;
+}
+.article-card button:hover{
+  box-shadow: 1px 2px 0.8em rgba(0,0,0,.5);
+  color: lightseagreen;
+  background-color: white;
+  transition: all 0.2s;
+}
+.pic-card02{
+  background: #333;
+  color: white;
+  padding: 0 2em 2em;
+}
+.pic-card02 h3, .pic-card02 h5{
+  text-align: center;
+  padding-top: 0.5em; 
+}
+.pic-card02 button{
+  border: 1px solid black;
+  padding: 3px 1.2em 5px;
+  background-color: #4f4;
+  font-weight: bold;
+  color: white;
+}
+.pic-card02 button:nth-of-type(1){
+  float: right;
+  background-color: red;
+}
+.pic-card02 button:hover{
+  box-shadow: 0 0 20px black;
+}
+.preamble-card{
+  box-sizing: border-box;
+  width: 20em;
+  background: white;
+  color: #333;
+  margin: 1em 0;
+  box-shadow: 3px 6px 1em rgba(0,0,0,.4);
+}
+.preamble-card img{
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  float: left;
+  margin: 1em 1em 0 1.5em;
+}
+.preamble-card p,.preamble-card h5{
+  padding: 0 1em 0 1em;
+  margin: 1em 0;
+}
+.preamble-card p{
+  margin-bottom: 2em;
+}
+.preamble-card p:first-letter{
+  font-size: 125%;
+  color: red;
+}
+.preamble-card h3{
+  background-color: #bbb;
+  color: white;
+  padding: 0.8em 0;
+  text-align: center;
+}
+.preamble-card a{
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background-color: gray;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.8em 0;
+}
+.float-effect{
+  width: 8em;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 0.5em;
+  box-shadow: 0 1px 5px rgba(0,0,0,.4);
+  margin: 1em 0 2em;
+}
+.float-effect:hover{
+  box-shadow: 0 0.8em 1em rgba(0,0,0,.4)
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <span class="close-btn" onclick="this.parentElement.style.display='none'">×</span>
+    <h3>警告</h3>
+    <p>此处危险，请小心，切勿靠近！</p>
+    <p>----------------------------迪士尼乐园</p>
+  </div>
+  <div class="pic-card">
+    <figure>
+      <img src="http://w3schools.bootcss.com/w3css/img_avatar3.png">
+      <figcaption>
+        <h3>饶炳良</h3>
+        <p>来自异位面，战斗力10000</p>
+      </figcaption>
+    </figure>
+  </div>
+  <div class="article-card">
+    <h3>外卖，外卖！</h3>
+    <p>开门，开门！我是送外卖的，你的盒饭到了。</p>
+    <p>其实我是查水表的。。。</p>
+    <button>按钮</button>
+    <h3>不要轻信陌生人。--季度山伯觉</h3>
+  </div>
+  <div class="pic-card pic-card02">
+    <h3>我爱他/她</h3>
+    <figure><img src="http://w3schools.bootcss.com/w3css/img_avatar3.png"></figure>
+    <h5>Carryme15</h5>
+    <button class="">接受他/她</button>
+    <button class="">拒绝他/她</button>
+  </div>
+  <div class="preamble-card">
+    <h3>SIMON</h3>
+    <h5>前端工作者</h5>
+    <img src="http://w3schools.bootcss.com/w3css/img_avatar3.png">
+    <p>哈哈，倔强！不服输，有坚持，这就是我，当然葛优瘫的也是我。一个人的性格是很复杂的，又多变，一个月前低落，一个月后就像打了鸡血。</p>
+    <a href="">+ 联系我</a>
+  </div>
+  <div class="float-effect">向上浮动</div>
+<script id="jsbin-javascript">
+function btnClose(){
+  this.parentElement.style.display = 'none';
+  return;
+}
+</script>
+</body>
+</html>
