@@ -1,0 +1,184 @@
+.summary,.zen-resources,.benefits{
+}
+.page-wrapper{
+  color: white;
+  background-color: #333;
+  box-shadow: 0 0 5px black;
+}
+.preamble:hover,.preamble:focus{  
+  background: url(bg.png);
+  background-color: rgb(122,255,255);
+  color: rgb(122,0,0);
+  box-shadow: 0 0 18px rgb(255,240,240);
+  transition: all 2s;
+}
+.explanation:hover,.explanation:focus{  
+  background: url(bg.png);
+  background-color: rgb(255,255,122);
+  color: rgb(66,0,0);
+  box-shadow: 0 0 18px rgb(255,240,240);
+  transition: all 2s;
+}
+.participation:hover,.participation:focus{  
+  background: url(bg.png);
+  background-color: rgb(255,190,122);
+  color: rgb(66,66,0);
+  box-shadow: 0 0 18px rgb(255,240,240);
+  transition: all 2s;
+}
+.benefits:hover,.benefits:focus{  
+  background: url(bg.png);
+  background-color: rgb(99,255,99);
+  color: rgb(0,0,0);
+  box-shadow: 0 0 18px rgb(255,240,240);
+  transition: all 2s;
+}
+.requirements:hover,.requirements:focus{  
+  background: url(bg.png);
+  background-color: rgb(199,255,99);
+  color: rgb(0,99,99);
+  box-shadow: 0 0 18px rgb(255,240,240);
+  transition: all 2s;
+}
+.benefits h3{
+  display: inline-block;
+  font-family: monospace;
+  word-wrap: break-word;
+  width: 1em;
+  font-size: 2em;
+  margin-left: 2em;
+}
+.main p,.preamble p{
+  margin: 0 2em;
+}
+.benefits p{
+  display: inline-block;
+  width: 70%;
+  position: relative;
+  top: -70px;
+  margin-left: 2em;
+}
+.benefits p::before{
+  content: ">>>>>>";
+}
+.sidebar{
+  text-align: center;
+}
+.sidebar ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+header::before{
+content: url(banner.png)
+}
+header h1{
+  display: none;
+}
+header h2,.summary{
+  position: absolute;
+  left: 0;
+  font-size: 0.6em;
+  display: inline;
+  width: 400px;
+}
+header h2{
+  top: 540px;
+}
+.summary{
+  top:560px;
+}
+/*large screen layerout*/
+body{
+  width: 960px;
+  margin: 0 0 1em 0;
+}
+
+/*sidebar*/
+.sidebar{
+  position: absolute;
+  top: 0;
+  left: 960px;
+}
+.sidebar ul{
+  font-size: 0.7em;
+  color: white;
+  font-weight: bold;
+}
+.sidebar a{
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+.sidebar h3{
+  display: block;
+  background-color: red;
+  font-size: 1.2em;
+  width: 1em;
+  word-wrap: break-word;
+  font-family: monospace;
+  color: black;
+}
+.design-selection h3:hover + nav{
+  visibility: visible;
+  width: 270px;
+  top: 50px;
+  right: 3em;
+  transition: all 3s;
+}
+.design-archives h3:hover + nav{
+  visibility: visible;
+  top: 300px;
+  width: 150px;
+  right: 3em;
+  transition: all 3s;
+}
+.zen-resources h3:hover + ul{
+  visibility: visible;
+  top: 450px;
+  width: 200px;
+  right: 3em;
+  transition: all 3s;
+}
+.sidebar nav,.zen-resources ul{
+  position: absolute;
+  right: 0;
+  display: block;
+  visibility: hidden;
+  background-color: rgba(255,255,255,.4);
+  right: 1.5em;
+}
+.zen-resources ul{
+  position: absolute;
+  visibility: hidden;
+  display: block;
+  right: 1.5em;
+}
+/*footer*/
+a{
+  color: lightblue;
+  text-decoration: none;
+  font-style: italic;
+}
+footer{
+  text-align: center;
+}
+footer a{
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  width: 4em;
+  height: 3em;
+  line-height: 3em;
+  border-radius: 1.2em;
+  background-color: white;
+}
+footer::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 960px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0 0 9px white;
+}

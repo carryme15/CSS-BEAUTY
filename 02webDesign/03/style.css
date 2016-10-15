@@ -1,0 +1,91 @@
+/*common28*16=200+200+48*/
+.summary,.preamble,.explanation,.participation,.benefits,.requirements{
+  box-sizing: border-box;
+  width: 28em;
+  border-radius: 30px;
+  margin-top: -2em;
+  filter:drop-shadow(0px 0px 5px rgba(0,0,0,.5));
+  padding: 1px 1em 1em 1em;
+}
+.summary:hover,.preamble:hover,.explanation:hover,.participation:hover,.benefits:hover,.requirements:hover{
+  margin-left: 5em;
+  transition: margin 1s;
+}
+.main{
+  margin-top: -2em;
+}
+
+/*link common*/
+a{
+  color: gray;
+  text-decoration-style: wavy;
+}
+.preamble{
+  color: darkblue;
+  background-color: lightskyblue;
+}
+.explanation{
+  color: #666;
+  background-color: lightgray;
+}
+.participation{
+  background-color: lightsteelblue;
+}
+.summary{
+  margin-top: 0;
+  color: white;
+  background-color: lightcoral;
+}
+.benefits{
+  color: white;
+  background-color: lightseagreen;
+}
+.requirements{
+  color: gray;
+  background-color: lightyellow
+}
+/*sidebar*/
+.sidebar{
+  position: absolute;
+  top: 80px;
+  left: 500px;
+  padding: 1px 1em;
+  z-index: -1;
+  border-radius: 30px;
+  box-shadow: inset 3px 3px 8px black;
+}
+.sidebar ul{
+  list-style: none;
+  padding: 0;
+}
+.sidebar a{
+  text-decoration: none;
+}
+/**/
+section h3::before,.main h3::before{
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-color: rgba(0,25,255,.2);
+  border-radius: 0.5em;
+}
+.summary p,.preamble p,.explanation p,.participation p,.benefits p,.requirements p{
+  border-left: 8px solid rgba(0,0,0,.1);
+}
+/*banner*/
+header h1{
+  display: none;
+}
+header h2{
+  display: none;
+}
+header{
+  height: 14em;
+}
+header::before{
+  position: absolute;
+  top: 0px;
+  left: 0;
+  content: url(face2.png);
+}

@@ -1,0 +1,145 @@
+/*test of columns,yes i am happy, cauze i find a new star*/
+/*common*/
+html,body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  position: relative;
+  width: 1010px;
+  height: 200px;
+  border-top: 1px solid #FCE94F;
+  background: url(banner.png);
+  filter: drop-shadow(0 0 6px black);
+  z-index: 99;
+}
+header h1{
+  font-size: 4em;
+  color: white;
+  margin-top: -10px;
+  transform: rotate(-6deg);
+}
+header h2::before{
+  content: "";
+  display: inline-block;
+  width: 300px;
+  height: 2px;
+  background-color: black;
+  transform: translateY(-5px);
+}
+header h2{
+  position: absolute;
+  top: 90px;
+  transform: rotate(-6deg);
+}
+header::after{
+  position: absolute;
+  content: url();
+  z-index: 88;
+}
+.preamble{
+  background-color: ;
+  columns: 300px;
+  column-rule: 6px groove red;            /*dashed, dotted, solid, groove*/
+  -moz-columns: 400px;                    /*for my favorite firefox*/
+  -moz-column-rule: 3px dashed #B30000;
+  -moz-column-fill: balance;   /*auto, and balance*/
+  -moz-column-gap: 3em;
+  padding: 0 0 1.5em 2em;
+  -webkit-columns: 300px;                  /*for webkit*/
+  -webkit-column-rule: 6px groove red;
+}
+.participation,.requirements{
+  -moz-columns: 400px;                    /*for my favorite firefox*/
+  -moz-column-rule: 3px dashed #B30000;
+  -moz-column-fill: balance;   /*auto, and balance*/
+  -moz-column-gap: 1.5em;
+  padding: 1.5em;
+}
+.summary{
+  position: relative;
+  background-color: white;
+  box-shadow: 0 8px 8px rgba(0,0,0,.5);
+  padding: 0.8em;
+  background-color: rgb(255,240,255);
+  z-index: 9;
+}
+.preamble{
+  position: relative;
+  background-color: white;
+  box-shadow: 0 8px 8px rgba(0,0,0,.5);
+  padding: 0.8em;
+  margin-top: -1em;
+  z-index: 8;
+}
+.explanation{
+  position: relative;
+  background-color: lightcyan;
+  padding: 1em;
+  margin-top: -2em;
+  box-shadow: 0 8px 8px rgba(0,0,0,.5);
+  z-index: 7;
+}
+.participation{
+  position: relative;
+  background-color: lightyellow;
+  padding-top: 1em;
+  margin-top: -2em;
+  box-shadow: 0 8px 8px rgba(0,0,0,.5);
+  z-index: 6;
+}
+.benefits{
+  position: relative;
+  background-color: lightcyan;
+  padding: 1em;
+  margin-top: -2em;
+  box-shadow: 0 8px 8px rgba(0,0,0,.5);
+  z-index: 5;
+}
+.requirements{
+  position: relative;
+  background-color: lightpink;
+  padding: 1em;
+  margin-top: -2em;
+  margin-bottom: 3em;
+  box-shadow: 0 8px 8px rgba(0,0,0,.5);
+  z-index: 4; 
+}
+.benefits:hover, .requirements:hover, .participation:hover, .explanation:hover,.preamble:hover{
+  transform: translate(0, 2em);
+  transition: transform 1s;
+}
+/*.explanation:hover + div,.requirements:hover + div,.benefits:hover + div,.participation:hover + div{
+}*/
+footer{
+  position: absolute;
+  top: 0px;
+  width: 200px;
+  left: 800px;
+  z-index: 999;
+}
+footer a{
+  font-size: 1.2em;
+  margin: 10px;
+  display: block;
+  float: left;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: monospace;
+  width: 1em;
+  word-wrap: break-word;
+}
+footer::after{
+  content: "copyright@carryme15";
+  display: block;
+  width: 4em;
+  height: 1em;
+  color: white;
+  font-weight: normal;
+  padding: 0 5px;
+  transform: rotate(-5.8deg) translate(-10px,0px);
+}
+/*sidebar*/
+.sidebar{
+  display: none;
+}

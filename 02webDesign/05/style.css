@@ -1,0 +1,112 @@
+/*旋转吧，mozhen*/
+header{
+  position: absolute;
+  top: 0;
+  font-size: 0.7em;
+  left: 180px;
+  text-align: center;
+  perspective: 400px;
+  display: block;
+  transform-style: preserve-3d; 
+  perspective-origin: 20% 20%;
+  animation: headerMove 4s infinite ease-in;
+}
+@keyframes headerMove{
+  to{
+    transform: rotateY(360deg);
+  }
+}
+header h2, header h1{
+  box-sizing: border-box;
+  display: block;
+  width: 8em;
+  height: 8em;
+  border-radius: 4em;
+  border: 5px solid #eee;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+header h2{
+  padding-top: 2em;
+  background-color: lightblue;
+  color: white;
+}
+header h1{
+  padding-top: 2.3em;
+  position: absolute;
+  color: black;
+  background-color: lightcoral;
+  transform: rotateY(180deg);
+}
+/*拖出来砍*/
+.summary::before{
+  content: url(selfIntroIcon.png);
+}
+.summary{
+  float: left;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 1em;
+  margin-left: 0px;
+  text-align: justify;
+  font-style: italic;
+  background-color: white;
+  border-bottom: 7px solid rgb(140,12,12);
+  box-shadow: -5px 5px 12px gray;
+}
+.preamble::before{
+  content: url(ai.png);
+}
+.preamble{
+  padding: 1em 1em 1em 26em;
+}
+.summary p{
+  transform: rotate(-3deg);
+}
+a{
+  text-decoration: none;
+  color: gray;
+}
+.preamble{
+  position: relative;
+}
+.preamble::after{
+  content: url(hehe.png);
+  display: block;
+  position: absolute;
+  top: 400px;
+  left: 60px;
+  z-index: 99;
+}
+.main{
+  margin-left: 4em;
+  perspective: 400px;
+  width: 800px;
+}
+.explanation,.participation,.benefits,.requirements{
+  box-shadow: 0 6px 8px rgba(0,0,0,.7);
+  padding: 1px 1em 1em;
+  transform: rotateX(8deg);
+}
+.explanation{
+  background-color: #ffe;
+}
+.participation{
+  background-color: azure;
+  margin-top: -9em;
+}
+.benefits{
+  background-color: lightyellow;
+  margin-top: -2em;
+}
+.requirements{
+  color: #333;
+  background-color: lightgray;
+  margin-top: -1em;
+}
+.explanation:hover,.participation:hover{
+  transform: rotateX(0deg) translateZ(20px);
+}
+.benefits:hover,.requirements:hover{
+  transform: rotateX(0deg) translateZ(30px);
+}
