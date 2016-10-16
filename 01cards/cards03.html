@@ -3,7 +3,7 @@
 Created using JS Bin
 http://jsbin.com
 
-Copyright (c) 2016 by carryme15 (http://jsbin.com/timixo/14/edit)
+Copyright (c) 2016 by carryme15 (http://jsbin.com/vakireq/10/edit)
 
 Released under the MIT license: http://jsbin.mit-license.org
 -->
@@ -14,103 +14,141 @@ Released under the MIT license: http://jsbin.mit-license.org
   <meta name="viewport" content="width=device-width">
   <title>JS Bin</title>
 <style id="jsbin-css">
-.logo {
-  position: relative;
-  margin: 1em;
+section{
+  padding: 1em 1em 1em 0;
+  height: 14em;
+  display: flex;
+  background: #ECF2FA;
 }
-
-.logo div {
-  position: absolute;
-  transform-origin: 50% 50%;
-  width: 6em;
-  height: 6em;
-  background-color: rgba(0,0,0,.2);
-  border-radius: 8px;
+section a{
+  color: #0074D9;
+  text-decoration: none;
+}
+.column-1{
+  flex: 0 0 auto;
+  width: 14em;
   text-align: center;
+}
+.close-btn{
+  position: absolute;
+  color: #0074D944;
+  font-weight: bold;
+  font-size: 1.4em;
+  transform: scaleY(0.8);
+  left: 1em;
+  top: 1em;
+}
+.column-1 img{
+  display: block;
+  margin: -0.5em auto 1em;
+  width: 50%;
+}
+.column-1 button{
+  width: 80%;
+  padding: 0.6em 0;
+  margin: 0 auto;
+  display: block;
+  color: #0074D9;
+  background: transparent;
+  border: 1px solid;
+}
+.column-1 button:nth-of-type(1){
+  border-bottom: none;
+}
+.column-2 a, .column-3 a{
+  display: block;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+  min-width: 14rem;
+  font-size: 0.9em;
+  font-weight: normal;
+}
+.column-2 a:nth-child(1), .column-3 a:nth-child(1){
+  font-weight: bold;
+}
+.column-2 form input{
+  margin-top: 3em;
+  color: #0074D9;
+}
+.column-3 button{
+  width: 12em;
+  background: #0a0 linear-gradient(hsla(0,0%,100%,.2),transparent);
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,.2);
+  padding: 0.8em;
+  margin-top: 2.2em;
+  margin-left: 0.5em;
   color: white;
 }
-
-.logo div:nth-child(2) {
-  transform: rotate(60deg);
+.column-4{
+  color: gray;
+  font-size: 0.8em;
+  background: white;
+  min-width: 22em;
+  border-radius: 0.5em;
+  padding: 1px 0 3em 2em;
 }
-
-.logo div:nth-child(3) {
-  transform: rotate(90deg);
+.column-4 h3{
+  color: #333;
+  font-size: 1rem;
+  text-shadow: 0 0 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
-
-.logo div:nth-child(4) {
-  transform: rotate(120deg);
+.column-4 h4{
+  font-size: 0.8em;
+  color: #0b6;
+  margin-top: 0.5em;
+  text-transform: uppercase;
 }
-
-.logo div:nth-child(5) {
-  transform: rotate(150deg);
+.column-4 button{
+  font-size: 1.1em;
+  display: block;
+  margin: 0 auto;
+  padding: 0.4em 1em;
+  color: white;
+  background: #0074D9;
+  border: none;
+  transform: scaleY(1.2);
 }
-
-.logo div:nth-child(6) {
-  transform: rotate(180deg);
-}
-
-.logo div:nth-child(7) {
-  transform: rotate(210deg);
-}
-
-.logo div:nth-child(8) {
-  transform: rotate(240deg);
-}
-
-.logo div:nth-child(9) {
-  transform: rotate(270deg);
-}
-
-.logo div:nth-child(10) {
-  transform: rotate(300deg);
-}
-
-.logo div:nth-child(11) {
-  transform: rotate(330deg);
-}
-
-.logo div:nth-child(12) {
-  transform: rotate(360deg);
-}
-.logo:nth-child(2){
-  margin: 3em 12em;
-}
-.logo:nth-child(2) div{
-  height: 1em;
-  text-indent: -30em;
-}
-
 </style>
 </head>
 <body>
-  <div class="logo">
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-  </div>
-  <div class="logo">
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-    <div>ss</div>
-  </div>
+  <section>
+    <div class="close-btn">X</div>
+    <div class="column-1">
+      <img class="logo" src="http://static.jsbin.com/images/dave.min.svg">
+      <button class="new-bin">New bin</button>
+      <button class="Open bin...">Open bin...</button>
+    </div>
+    <div class="column-2">
+      <a href="">JS Bin features >></a>
+      <a href="">Getting started</a>
+      <a href="">Keyboard Shortcuts</a>
+      <a href="">Exporting/importing gist</a>
+      <form>
+        <input type="radio">Textarea editor mode</input>
+      </form>
+    </div>
+    <div class="column-3">
+      <a href="">Profeatures>></a>
+      <a href="">Private bins</a>
+      <a href="">Dropbox backup</a>
+      <a href="">Vanity URLs</a>
+      <button>Upgrade to pro now</button>
+    </div>
+    <div class="column-4">
+      <h3>Advanced CSS Layout Training</h3>  
+      <h4>With Rachel Andrew</h4>
+      <ul>
+        <li>Learning from the past</li>
+        <li>CSS Layout today</li>
+        <li>Just Landing</li>
+        <li>Experimental</li>
+        <li>Building the future</li>
+      </ul>
+      <button>BOOK TODAY</button>
+    </div>
+  </section>
 </body>
 </html>
