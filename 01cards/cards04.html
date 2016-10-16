@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by carryme15 (http://jsbin.com/bawufeh/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  background: white linear-gradient(45deg,yellow, lightseagreen) fixed;  
+}
+div{
+  box-sizing: border-box;
+}
+.border-halftransparent, .outline-display{
+  margin: 3em;
+  width: 16em;
+  height: 6em;
+}
+.border-halftransparent{
+  background: white padding-box;
+  border: 1em solid hsla(0,0%,100%,.4);
+}
+.outline-display{
+  padding: 1em;
+  border-radius: 9px;
+  background: hsl(120,90%,50%);
+  outline: 2px dashed hsla(0,0%,100%,.8);
+  outline-offset: -9px;
+}
+div:nth-child(1){
+  margin: 3em;
+  height: 2px;
+  width: 16em;
+  background: transparent;
+  box-shadow: 0 4px 2px 0px hsla(0,0%,100%,.5)
+}
+hr{
+  color: red;
+  height: 1em;
+  background: hsla(0,0%,100%,.2);
+  border: none;
+}
+</style>
+</head>
+<body>
+  <hr>
+  <div></div>
+  <div></div>
+  <div class="outline-display"></div>
+  <div class="border-halftransparent"></div>
+  </body>
+</html>
