@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by carryme15 (http://jsbin.com/yilitos/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<html class=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta name="robots" content="noindex">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+
+header h1{
+  font-style: italic;
+  color: hsla(120,50%,50%,.5);
+  transform: rotate(-5deg);
+  border-bottom: 2px dotted;
+}
+header{
+  margin-bottom: 3em;
+}
+.font-list li{
+  font-family: monospace;
+  font-weight: bold;
+  display: inline-block;
+  padding: 1em;
+  width: 1em;
+  word-break: break-all;
+  color: white;
+  box-shadow: 1px 1px 3px rgba(0,0,0,.5);
+}
+.font:nth-child(1){
+  background: hsl(120,10%,50%);
+}
+.font:nth-child(2){
+  background: hsl(120,25%,50%);
+}
+.font:nth-child(3){
+  background: hsl(120,35%,50%);
+}
+.font:nth-child(4){
+  background: hsl(120,50%,50%);
+}
+.explanation{
+  position: relative;
+  width: 60%;
+  margin: 3em auto;
+  padding: 1px 1em;
+  color: white;
+  text-indent: 2em;
+  background: lightgreen;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 0.5em 2em; 
+  box-shadow: 2px 3px 2px rgba(0,0,0,.3);
+  word-break: break-all;
+}
+.explanation::before{
+  content: "备注";
+  display: block;
+  position: absolute;
+  font-size: 1em;
+  font-weight: bold;
+  text-indent: 0;
+  top: 1em;
+  left: -1em;
+  width: ;
+  height: ;
+  transform: skewY(-5deg);
+  box-shadow: 2px 2px 3px rgba(0,0,0,.9);
+  padding: 0.3em 1em;
+  background: linear-gradient(-45deg, hsl(360,90%,60%), lightpink);
+}
+.explanation::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  top: 1.5em;
+  left: -1em;
+  z-index: -1;
+  transform: skewY(6deg);
+  background: hsl(360,90%,60%);
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Font setting</h1>
+  </header>
+  <div class="content">
+    <ul class="font-list">
+      <li class="font">Helvetica Neue
+      </li><li class="font">Helvetica
+      </li><li class="font">Arial
+      </li><li class="font">sans-serif
+    </li></ul>
+    <div class="explanation">
+      <p>在中文字体环境较为复杂,主要是Windows、OS X 和 Linux 尚未有一款共通的系统自带字体的情况下，字体的选择就很有限了，下面基本通用：Helvetica Neue, Helvetica, Arial, sans-serif</p>
+    </div>
+    <p></p>
+  </div>
+
+</body></html>
