@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by carryme15 (http://jsbin.com/vamopaf/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+.bubble-discuss{
+  margin: 2em;
+  position: relative;
+  width: 6em;
+  height: 4em;
+  background-color: lightpink;
+  border-radius: 1em;
+  border: 1px solid hsla(0,0%,0%,.3);
+  box-shadow: 0 2px 3px rgba(0,0,0,.4);
+}
+.bubble-discuss::before{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  transform: rotate(45deg);
+  background: inherit;
+  border: inherit;
+  border-width: 1px 0 0 1px;
+}
+.bubble-discuss:nth-child(1)::before{
+  left: 2em;
+  top: -0.54em;
+}
+.bubble-discuss:nth-child(2)::before{
+  border-width: 1px 1px 0 0;
+  top: 1.5em;
+  right: -0.54em;
+  box-shadow: 2px 0px 1px -1px rgba(0,0,0,.3)
+}
+.bubble-discuss:nth-child(3)::before{
+  border-width: 0 1px 1px 0;
+  bottom: -0.54em;
+  right: 2em;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3); 
+}
+.bubble-discuss:nth-child(4)::before{
+  border-width: 0 0 1px 1px;
+  left: -0.54em;
+  top: 1.5em;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,.5)
+}
+.strange-header{
+  position: relative;
+  width: 18em;
+  height: 12em;
+  background: #0fb;
+  text-align: center;
+  margin: 2em;
+}
+.strange-header h3{
+  position: absolute;
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+  height: 32px;
+  clip-path: url(#svgPath01);
+  background: rgba(0,0,0,.6);
+  box-shadow: 0 0 3px black;
+  color: white;
+}
+.strange-header:nth-child(6) h3{
+  box-sizing: border-box;
+  clip-path: none;
+  width: 32px;
+  height: 200px;
+  padding-top: 2.8em;
+  clip-path: url(#svgPath02);
+  transform: scale(0.8);
+  right: -28px; 
+}
+.strange-header:nth-child(7) h3{
+  bottom: 0;
+  clip-path: url(#svgPath03);
+}
+.strange-header:nth-child(8){
+  margin-top: 3em;
+}
+.strange-header:nth-child(8) h3{
+  top: -32px;
+  left: 0px;
+  clip-path: url(#svgPath03);
+  filter: drop-shadow(0 0 3px red);
+}
+</style>
+</head>
+<body>
+  <div class="bubble-discuss"></div>
+  <div class="bubble-discuss"></div>
+  <div class="bubble-discuss"></div>
+  <div class="bubble-discuss"></div>
+  <div class="strange-header">
+    <h3>我喜欢</h3>
+  </div>
+  <div class="strange-header">
+    <h3>我讨厌</h3>
+  </div>
+  <div class="strange-header">
+    <h3>我高兴</h3>
+  </div>
+  <div class="strange-header">
+    <h3>我忧虑</h3>
+  </div>
+  <svg height="0" width="0">
+    <defs>
+      <clipPath id="svgPath01">
+        <path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M0 0 L200 0 L168 32 L32 32 Z"></path>
+       </clipPath>
+      <clipPath id="svgPath02">
+        <path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M0 0 L32 32 L32 168 L0 200 Z"></path>
+       </clipPath>
+      <clipPath id="svgPath03">
+        <path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M0 32 L200 32 L168 0 L32 0 Z"></path>
+       </clipPath>
+      <clipPath id="svgPath04">
+        <path fill="#FFFFFF" stroke="#000000" stroke-width="1.5794" stroke-miterlimit="10" d="M0 0 L200 0 L168 32 L32 32 Z"></path>
+       </clipPath>
+</defs>
+</svg>
+</body>
+</html>
