@@ -1,0 +1,346 @@
+html{
+  background: url("bg-2.svg");
+  padding: 0;
+}
+body,
+.zone-1,
+.zone-2,
+.zone-3,
+.skills-software,
+.interests{
+  box-sizing: border-box;
+}
+body{
+  font-family: Helvetica, "Microsoft YaHei",Arial;
+  margin: 0 auto;
+  background-color: white;
+	width: 900px;
+  padding: 25px;
+	font-size: 13px;
+  line-height: 1.5;
+  border: 1px solid black;	
+  box-shadow: 0 0 4px rgba(0,0,0,.7), 0 0 15px rgba(0,0,0,.7);
+}
+body::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+.zone-1{
+  float: left;
+  width: 280px;
+}
+.zone-2{
+  /*float: left;*/
+  display: inline-block;
+  width: 560px;
+}
+.interests{
+  display: inline-block;
+  width: 290px;
+  margin-top: 30px;
+  border-left: 2px dashed gray;
+}
+.self-pic{
+  width: 170px;
+  height: 170px;
+  margin-left: 54px;
+  background: #008DD2;
+  background-image:url("pic1.png");
+  background-position: -13px -5px;
+  border-radius: 50%;
+}
+.self-intro{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 3em;
+}
+.self-intro p{
+  display: block;
+  margin: 0;
+  padding: 0.8em 0;
+  border-bottom: 2px dashed gray;
+}
+.self-intro p:first-child,
+.self-intro p:nth-child(2){
+  text-align: center;
+}
+.zone-1 i{
+  box-sizing: border-box;
+  display: inline-table;
+  height: 2em;
+  width: 2em;
+  color: white;
+  padding-top: 0.5em;
+  text-align: center;
+  border-radius: 50%;
+  background: #008DD2;
+}
+.name-front,
+.envelope,
+.mobile-phone,
+.blogaddr
+{
+  padding-left: 15px;
+}
+.envelope,
+.blogaddr{
+  font-size: 0.8em;
+}
+.zone-2{
+  font-weight: bold;
+}
+.motto{
+  font-size: 1.2em;
+  color: #aaa;
+  margin-left: 150px;
+  position: relative;
+}
+.motto::before{
+  content: "“";
+  display: block;
+  position: absolute;
+  left: -20px;
+  transform: translate(-20px,-20px);
+  font-size: 3em;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  background: #bbb;
+  border-radius: 50%;
+  border-top: 1px solid white;
+  box-shadow: 0 0 4px rgba(0,0,0,.5), 0 0 12px rgba(0,0,0,.5);
+  color: white;
+  left: -1em;
+}
+.skills-software{
+  display: inline-block;
+  float: left;
+  margin-top: 30px;
+  font-size: 1.1em;
+  margin-left: 60px;
+  width: 186px;
+}
+.skills-header{
+  background: black;
+  margin-bottom: 1em;
+  width: 100px;
+  color: white;
+  height: 30px;
+  line-height: 2em;
+  padding-left: 1em;
+}
+.skills-software lable{
+  line-height: 1.7em;
+}
+.skills-software span{
+  float: right;
+  width: 90px;
+  margin-top: 0.7em;
+  margin-right: 10px;
+  height: 0.5em;
+  background: #008DD2;
+}
+.comunication{
+  position: relative;
+}
+.comunication span::after{
+  content: "";
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0.7em;
+  right: 10px;
+  width: 30px;
+  height: 0.5em;
+}
+.teamwork{
+  position: relative;
+}
+.teamwork span::after{
+  content: "";
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0.7em;
+  right: 10px;
+  width: 20px;
+  height: 0.5em;
+}
+.leader{
+  position: relative;
+}
+.leader span::after{
+  content: "";
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0.7em;
+  right: 10px;
+  width: 30px;
+  height: 0.5em;
+}
+.learning{
+  position: relative;
+}
+.learning span::after{
+  content: "";
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0.7em;
+  right: 10px;
+  width: 30px;
+  height: 0.5em;
+}
+.photoshop{
+  position: relative;
+}
+.photoshop span::after{
+  content: "";
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0.7em;
+  right: 10px;
+  width: 30px;
+  height: 0.5em;
+}
+.jQuery{
+  position: relative;
+}
+.jQuery span::after{
+  content: "";
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0.7em;
+  right: 10px;
+  width: 30px;
+  height: 0.5em;
+}
+.css{
+  position: relative;
+}
+.css span::after{
+  content: "";
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0.7em;
+  right: 10px;
+  width: 20px;
+  height: 0.5em;
+}
+.flash{
+  position: relative;
+}
+.flash span::after{
+  content: "";
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0.7em;
+  right: 10px;
+  width: 60px;
+  height: 0.5em;
+}
+.sql{
+  position: relative;
+}
+.sql span::after{
+  content: "";
+  display: block;
+  background: black;
+  position: absolute;
+  top: 0.7em;
+  right: 10px;
+  width: 40px;
+  height: 0.5em;
+}
+.lable{
+  margin-bottom: 3px;
+}
+.interests-header{
+  background: black;
+  margin-left: 40px;
+  margin-bottom: 1em;
+  width: 100px;
+  color: white;
+  height: 30px;
+  line-height: 2em;
+  padding-left: 1em;
+}
+.interests-show{
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  width: 310px;
+}
+.interests-show i{
+  display: block;
+  font-size: 4em;
+  color: #008DD2;
+  /*color: gray;*/
+}
+.row div
+{
+  display:inline-block;
+  width: 100px;
+}
+.row p{
+  text-align: center;
+}
+.zone-3{
+  position: relative;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.experience-header{
+  background: black;
+  margin-left: 340px;
+  margin-bottom: 1em;
+  width: 115px;
+  color: white;
+  height: 30px;
+  line-height: 2em;
+  padding: 0 1em; 
+}
+.timefly{
+  position: absolute;
+  border: 2px dashed gray;
+}
+#highSchool{
+  left: 156px;
+  top: 70px;
+  border-width: 2px 0;
+  padding: 20px;
+}
+#university{
+  left: 480px;
+  top: 154px;
+  border-width: 2px 0;
+  padding: 20px 20px 20px 40px;
+}
+#lostTime{
+  left: 156px;
+  top: 300px;
+  border-width: 2px 0 2px 2px;
+  padding: 50px 20px 50px 40px;
+}
+#current{
+  left: 480px;
+  top: 350px;
+  border-width: 2px 2px 2px 0;
+  padding: 40px 40px 40px 50px;
+}
+
+footer{
+  position: relative;
+  left: -30px;
+  width: 150px;
+  text-align: center;
+  background:red;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,.7);
+}

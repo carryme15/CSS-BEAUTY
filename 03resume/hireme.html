@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>xixi</title>
+		<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="hireme.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+  </head>
+  <body>
+    <!-- 区域1用于贴头像和介绍自己的基本信息-->
+    <div class="zone-1">
+      <div class="self-pic"></div>
+      <div class="self-intro">
+        <p><span  style="color:#008DD2" class="name-front">你好，我的名字是</span><br><span>饶炳良</span></p>
+        <p>目前想从事web前端工作</p>
+        <p><i class="icon-envelope-alt"></i><span class="envelope">nanhuangma@163.com</span></span></p>
+        <p><i class="icon-mobile-phone"></i><span class="mobile-phone">+18779133963<span></p>
+        <p><i class="icon-bold"></i><span class="blogaddr">cnblogs.com/carryme15<span></p>
+      </div>
+    </div>
+    <!-- 区域2用于介绍自己的技能 -->
+    <div class="zone-2">
+      <div class="motto">
+        <p>山不在高&nbsp&nbsp&nbsp&nbsp有仙则名&nbsp&nbsp&nbsp&nbsp水不在深&nbsp&nbsp&nbsp&nbsp有龙则灵</p>
+        <p>斯是陋室&nbsp&nbsp&nbsp&nbsp唯吾德馨</p>
+      </div>
+      <div class="skills-software">
+        <div class="skills">
+          <div class="skills-header"><p>能力</p></div>
+          <div class="lable comunication">
+            <lable>交流能力</lable><span></span>
+          </div>
+          <div class="lable teamwork">
+            <lable>团队合作</lable><span></span>
+          </div>
+          <div class="lable leader">
+            <lable>领导能力</lable><span></span>
+          </div>
+          <div class="lable learning">
+            <lable>学习能力</lable><span></span>
+          </div>
+        </div>
+        <div class="software">
+          <div class="skills-header"><p>软件</p></div>
+          <div class="lable photoshop">
+            <lable>PS</lable><span></span>
+          </div>
+          <div class="lable jQuery">
+            <lable>JQUERY</lable><span></span>
+          </div>
+          <div class="lable css">
+            <lable>CSS</lable><span></span>
+          </div>
+          <div class="lable flash">
+            <lable>FLASH</lable><span></span>
+          </div>
+          <div class="lable sql">
+            <lable>SQL</lable><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="interests">
+        <div class="interests-header"><p>爱好</p></div>
+        <canvas id="myCanvas" width="300" height="300"></canvas>
+        <div class="interests-show">
+          <div class="row">
+            <div><i class="icon-beer"></i><p>喝酒</p></div>
+            <div><i class="icon-money"></i><p>赚钱</p></div>
+            <div><i class="icon-film"></i><p>看电影</p></div>
+          </div>
+          <div class="row">
+            <div><i class="icon-headphones"></i><p>听歌</p></div>
+            <div><i class="icon-book"></i><p>读书</p></div>
+            <div><i class="icon-desktop"></i><p>敲代码</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 区域3用于介绍自己的教育和工作经历 -->
+    <div class="zone-3">
+      <div class="experience-header"><p>教育和工作经历</p></div>
+      <canvas id="myExperience" width="730" height="520" style="position: relative;left:120px;"></canvas>
+      <p id="highSchool" class="timefly">考进县重点高中，开始读其他题材的小说杂志
+      <br>喜欢画画，没有经过系统的学习</p>
+      <p id="university" class="timefly">高中毕业后，在西安电子科技大学就读;<br>大二开始强撸DOTA2<br>monster kill</p>
+      <p id="lostTime" class="timefly">大学毕业，因为有些自闭<br>没有工作多久时间就<br>回家养心。</p>
+      <p id="current" class="timefly">在本地一公司做智能交通技术支持<br>奈何工资一直达不到预期。<br>Life goes on</p>
+    </div>
+    <footer>copyright@carryme15</footer>
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      function drawCircle(i, s, n){
+        ctx.beginPath();
+        ctx.strokeStyle = s;
+        ctx.lineWidth = 13;
+        ctx.stroke();
+        ctx.arc(150,150,i,1.5*Math.PI,n);
+        ctx.stroke();
+      }
+      function drawInterest(c, s, n, r) {
+        ctx.font = "bold " + 13 + "px arial";
+        ctx.textBaseline="middle";
+        ctx.fillStyle= c;
+        ctx.fillText(s, n, 150-r);
+      }
+      //LOVE CODE
+      ctx.font = "bold " + 18 + "px arial";
+      ctx.textBaseline="middle";
+      ctx.fillStyle= "black";
+      ctx.fillText("CODER", 114, 150);
+      //DRAW CIRCLE AND TITLE
+      drawCircle(40, "#008DD2", 0.35*Math.PI);
+      drawInterest("#008DD2","跳舞", 120, 40);
+      drawCircle(65, "#000", 0.6*Math.PI);
+      drawInterest("#000","唱歌", 120, 65);
+      drawCircle(90, "#008DD2", 0.7*Math.PI);
+      drawInterest("#008DD2","画画", 120, 90);
+      drawCircle(115, "#000", 0.85*Math.PI);
+      drawInterest("#000","沉思", 120, 115);
+      drawCircle(140, "#008DD2", 0.9*Math.PI);
+      drawInterest("#008DD2","旅游", 120, 140);
+      //second pic (experience)
+      var experienceCanvas = document.getElementById("myExperience");
+      var ctx_2 = experienceCanvas.getContext("2d");
+      ctx_2.setLineDash([5, 10])
+      ctx_2.beginPath();
+      ctx_2.moveTo(365,0);
+      ctx_2.lineWidth = 2;
+      ctx_2.strokeStyle = "gray";
+      ctx_2.lineTo(365, 500);
+      ctx_2.stroke();
+      //next
+      ctx_2.beginPath();
+      ctx_2.moveTo(365, 230);
+      ctx_2.lineWidth = 2;
+      ctx_2.strokeStyle = "gray";
+      ctx_2.lineTo(260, 270);
+      ctx_2.stroke();
+      //next
+      ctx_2.beginPath();
+      ctx_2.moveTo(365, 310);
+      ctx_2.lineWidth = 2;
+      ctx_2.strokeStyle = "gray";
+      ctx_2.lineTo(260, 440);
+      ctx_2.stroke();
+      //write year
+      ctx_2.font = "bold " + 16 + "px arial";
+      ctx_2.textBaseline="middle";
+      ctx_2.strokeStyle= "black";
+      ctx_2.fillText("2006", 348, 10);
+      ctx_2.fillText("2009", 348, 100);
+      ctx_2.fillText("2013", 348, 190);
+      ctx_2.fillText("2014", 348, 280);
+      ctx_2.fillText("2015", 348, 370);
+      ctx_2.fillText("2016", 348, 460);
+      ctx_2.fillText("Present", 348, 500);
+    </script>
+  </body>
+</html>
