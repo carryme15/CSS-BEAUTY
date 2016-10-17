@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by carryme15 (http://jsbin.com/lawiva/6/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+/*-------------------
+序列 C8A552  FFFFFF
+行高 1.5
+title C8A552
+title sub 586986
+font E3E8EB
+---------------------
+*/
+/*bg and font setting*/
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: Microsoft YaHei, STHeiTi, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #E3E8EB;
+  background: linear-gradient(135deg,rgba(0,0,0,.2) 17%,transparent 0,transparent 83%, rgba(0,0,0,.2) 0),linear-gradient(135deg,rgba(0,0,0,.2) 17%,transparent 0,transparent 83%, rgba(0,0,0,.2) 0),linear-gradient(135deg,rgba(0,0,0,.2) 17%,transparent 0,transparent 83%, rgba(0,0,0,.2) 0);
+  background-size: 6px 6px;
+  background-position: 0 0, 2px 2px, 4px 4px; 
+  background-color: #34415A;
+}
+/*header setting*/
+header h1{
+  margin: 1em 1em 2em 0;
+  padding-left: 2em;
+  font-size: 1.5em;
+  line-height: 1em;
+  padding: 0;
+  color: #C8A552;
+}
+header h1::before{
+  content: "";
+  display: inline-block;
+  margin: 0 1.5em .1em .8em;
+  height: 1.5rem;
+  width: 0.2em;
+  border-radius: .5em;
+  background: #C8A552;
+  vertical-align: middle;  
+}
+header h1::after{
+  content: "INTERVIEW";
+  color: #586986;
+  font-size: .8em;
+  margin-left: 1.5em;
+}
+/*question and answer settings*/
+.content{
+  position: relative;
+  margin: 1em;
+  padding: 1em;
+  background: rgba(255,255,255,.15);
+}
+.question p{
+  font-size: 1.05em;
+  display: inline-block;
+  padding: 0em 2em 0em 3em;
+}
+.question-sequence{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 0.95em;
+  color: white;
+  width: 2.1em;
+  height: 2.1em;
+  background: #C8A552;
+  border-radius: 50%;
+  /*字母居中*/
+  padding: 0.25em 0.3em;
+  /*垂直居中*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.5em;
+  margin: auto 0;
+}
+.answer p{
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #AFBACE;
+  padding: 0 0 0 1em;
+}
+/*layerout*/
+.question, .answer{ 
+  display: inline-block;
+  width: 49%;
+  vertical-align: middle;
+}
+.question p{
+  margin-left: 2em;
+  width: 80%;
+}
+.question p, .answer p, .question-sequence{
+}
+/*special for device*/
+@media screen and (min-width:1100px){
+  .answer p{
+    border-left: 2px solid #999;
+  }
+}
+@media screen and (max-width: 720px){
+  .content{
+    margin: 0.5em 0 2em;
+  }
+  .answer, .question{
+    width: 100%;
+  }
+  .question p{
+    margin: 0 0 0.5em;
+  }
+  .question-sequence{
+    top: -1em;
+    margin: 0;
+    box-shadow: 0 3px 3px rgba(0,0,0,.5);
+  }
+  .answer{
+    border-top: 1px dotted white;
+  }
+}
+/*不能小于300像素，小于三百像素，就崩了*/
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>名家访谈</h1>
+  </header>
+  <div class="content-wrapper">
+    <div class="content">
+      <div class="question"><span class="question-sequence">Q1</span><p>寒月文中的男主都是冷酷却又深情类的，那这种男人是不是寒月喜欢的男人类型呢？</p></div>
+      <div class="answer"><p>是呀，所以，基本每一篇男主都是这种性格，无论故事是怎样的，男主都对别的任何人都是冷酷的，唯独对女主不一样，寒月也很渴望有这样的男人来爱，哈哈，似乎是白日做梦，你别叫醒我，千万别叫醒我。</p></div>
+    </div>
+    <div class="content">
+      <div class="question"><span class="question-sequence">Q2</span><p>寒月最喜欢自己笔下的哪个男主？</p></div>
+      <div class="answer"><p>（羞羞脸）其实在写哪一篇的时侯，就很喜欢那一篇的男主，不过现在最喜欢南司辰，因为前面的男主都被我写残了，但是南司辰却是从头到尾性格一直控制的很好的，我喜欢他的沉默寡言，喜欢他对女主的宠和好，却从来都不会说，一切都用实际行动来证明。</p></div>
+    </div>
+    <div class="content">
+      <div class="question"><span class="question-sequence">Q3</span><p>寒月是怎么走上码字这条不归路的？</p></div>
+      <div class="answer"><p>其实吧，以前也只是因为上班无聊，所以就经常看小说，看着看着，就萌生了自己也写一篇试试看的想法，于是就开始动笔了……</p></div>
+    </div>
+    <div class="content">
+      <div class="question"><span class="question-sequence">Q4</span><p>写文其实是一件很辛苦的事情，寒月有没有想过放弃呢？</p></div>
+      <div class="answer"><p>以前还在一边上班一边码字，确实觉得好辛苦好辛苦，中途也想过要放弃，可是那时侯遇到了我们萌萌哒闲庭大大，至今我还记得她跟我说，好好写，总有一篇能火的，就因为这句话，我坚持下来了，当时真的好感动，我只是一个扑街货，可是闲庭大大却没有放弃过我，我又凭什么要放弃自己呢。</p></div>
+    </div>
+    <div class="content">
+      <div class="question"><span class="question-sequence">Q5</span><p>那最后寒月有什么话要对自己的编辑和读者说的吗？</p></div>
+      <div class="answer"><p>其实除了感谢，我真的不知道该说什么好，我是一个不善言表的人，在这里只能真诚的说一句感谢所有曾经鼓励过我，帮助过我的基友们，谢谢你们，哈哈，无论是编辑还是读者，我都当他们是基友了。</p></div>
+    </div>
+  </div>
+</body>
+</html>
